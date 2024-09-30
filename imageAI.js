@@ -47,7 +47,7 @@
           {
             opcode: "size",
             blockType: Scratch.BlockType.COMMAND,
-            text: "height：[wi] width：[he]",
+            text: "height:[wi] width:[he]",
             arguments: {
               wi: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -62,7 +62,7 @@
           {
             opcode: "steps",
             blockType: Scratch.BlockType.COMMAND,
-            text: "step：[stepm]",
+            text: "step:[stepm]",
             arguments: {
               stepm: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -73,7 +73,7 @@
           {
             opcode: "seeds",
             blockType: Scratch.BlockType.COMMAND,
-            text: "seed(random:-1)：[seedm]",
+            text: "seed(random:-1):[seedm]",
             arguments: {
               seedm: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -84,7 +84,7 @@
           {
             opcode: "cfgsa",
             blockType: Scratch.BlockType.COMMAND,
-            text: "Classifier Free Guidance scale：[cfgsa]",
+            text: "Classifier Free Guidance scale:[cfgsa]",
             arguments: {
               cfgsa: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -95,7 +95,7 @@
           {
             opcode: "strength",
             blockType: Scratch.BlockType.COMMAND,
-            text: "strength：[strength]",
+            text: "strength:[strength]",
             arguments: {
               strength: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -106,7 +106,7 @@
           {
             opcode: "sampler",
             blockType: Scratch.BlockType.COMMAND,
-            text: "sampler：[samplerms]",
+            text: "sampler:[samplerms]",
             arguments: {
               samplerms: {
                 type: Scratch.ArgumentType.STRING,
