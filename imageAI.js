@@ -181,10 +181,10 @@ items:[
         }
 
         const data = await response.json();
-        return data.result || "結果が得られませんでした";
+        return data.result || "No results were obtained";
       } catch (error) {
         console.error('Error fetching data:', error);
-        return "エラーが発生しました";
+        return "ERROR";
       }
     }
 
@@ -202,7 +202,7 @@ if(args.outputFormat==="fetchURL"){ return url }else{
         const contentType = response.headers.get("content-type");
         if (contentType && contentType.includes("application/json")) {
           const data = await response.json();
-          return data.result || "結果が得られませんでした";
+          return data.result || "No results were obtained";
         } else if (contentType && contentType.includes("image/")) {
           const blob = await response.blob();
           if (args.outputFormat === "dataURL") {
@@ -216,7 +216,7 @@ if(args.outputFormat==="fetchURL"){ return url }else{
         }
       } catch (error) {
         console.error('Error fetching data:', error);
-        return "エラーが発生しました";
+        return "ERROR";
       }
 }
     }
